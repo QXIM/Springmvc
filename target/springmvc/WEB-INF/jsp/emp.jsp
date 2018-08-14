@@ -37,8 +37,8 @@
             <td>${emp.comm}</td>
             <td>${emp.deptno}</td>
             <td>
-                <a href="#">修改</a>
-                <a href="#">删除</a>
+                <a href="/emp/update/${emp.empno}">修改</a>
+                <a href="/emp/delete/${emp.empno}">删除</a>
             </td>
 
 

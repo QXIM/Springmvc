@@ -24,4 +24,21 @@ public class EmpServiceImpl implements EmpService {
     public void addEmp(Emp emp) {
         empMapper.insert(emp);
     }
+
+    @Override
+    public void deleteEmp(Integer empno) {
+        empMapper.deleteByPrimaryKey(empno);
+    }
+
+    @Override
+    public Emp findByEmpno(Integer empno) {
+
+        return empMapper.selectByPrimaryKey(empno);
+    }
+
+    @Override
+    public void updateEmp(Emp emp) {
+        empMapper.updateByPrimaryKey(emp);
+
+    }
 }

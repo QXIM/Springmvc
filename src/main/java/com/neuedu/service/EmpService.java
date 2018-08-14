@@ -10,4 +10,7 @@ public interface EmpService {
 
     List<Emp> findAll();
     void addEmp(Emp emp);
+    void deleteEmp(Integer empno);
+    Emp findByEmpno(Integer empno);
+    void updateEmp(Emp emp);
 }
